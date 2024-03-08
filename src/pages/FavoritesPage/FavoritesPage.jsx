@@ -1,6 +1,9 @@
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export const FavoritesPage = () => {
-  return <h2>Favorites</h2>;
+  return <>
+           <ErrorPage/>
+         </>
 };
 
 export default FavoritesPage;

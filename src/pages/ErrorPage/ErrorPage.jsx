@@ -1,10 +1,13 @@
-import { Container, Title } from './ErrorPage.styled';
+import { Button, EmptyTitle, ImgEmptyFav, WrapperLink } from "./ErrorPage.styled";
+
 
 const ErrorPage = () => {
   return (
-    <Container>
-      <Title>404</Title>
-    </Container>
+    <WrapperLink>
+    <EmptyTitle>Favorite is empty.</EmptyTitle>
+    <ImgEmptyFav alt="favorite-is-empty" />
+    <Button to={'/catalog'}>Go to catalog</Button>
+  </WrapperLink>
   );
 };
 

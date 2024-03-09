@@ -1,4 +1,4 @@
-import{n as o,L as n,j as t}from"./index-b09ae76c.js";const r="/Rent_Car/assets/favorites__empty-308241bf.png",e=o.span`
+import{n as o,L as n,j as t}from"./index-32e1754b.js";const r="/Rent_Car/assets/favorites__empty-308241bf.png",e=o.span`
 font-weight: 500;
 font-size: 18px;
 line-height: 1,11;

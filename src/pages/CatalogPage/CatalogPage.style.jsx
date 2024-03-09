@@ -10,7 +10,7 @@ export const LoadMoreBtn = styled.button`
   line-height: 1.5;
   color: #3470ff;
   display: block;
-  margin: 40px auto;
+  margin: 0 auto 30px;
 
   &:hover,
   &:focus {

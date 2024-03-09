@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
 
-
 body {
   margin: 0;
 
@@ -66,6 +65,9 @@ button {
   
   --dark: #121417;
   --grey: #8A8A89;
+  --withe-grey: #363535;
+
+
 
   --blue: #3470FF;
   --hover-blue: #0B44CD;

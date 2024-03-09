@@ -2,29 +2,49 @@ import styled from "styled-components";
 
 export const ItemWrapper = styled.li`
 display: flex;
-width: 274px;
+width: 100%;
 height: auto;
 flex-direction: column;
 align-items: flex-start;
+margin-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+width: calc((100% - 30px) / 2);
+
+@media screen and (min-width: 1440px) {
+  width: calc((100% - 60px) / 3);
+  }
+}
 `;
+
 export const WrapperImage = styled.div`
   position: relative;
-  width: 274px;
-  height: 268px;
   margin-bottom: 14px;
 `;
 
 export const ImageCar = styled.img`
   width: 100%;
-  height: 268px;
   object-fit: cover;
   border-radius: 14px;
 `;
 
+export const Heart = styled.svg`
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.667px;
+`;
+
+
 export const WrapperTitle = styled.div`
-  width: 274px;
+  width: 100%;
   align-items: center;
-  color: #121417;
+  color: var(--dark);
   display: flex;
   justify-content: space-between;
   padding-right: 8px;
@@ -32,10 +52,9 @@ export const WrapperTitle = styled.div`
 `;
 
 export const Title = styled.h3`
-  width: 274px;
-  height: 24px;
+  width: 100%;
   overflow: hidden;
-  color: #121417;
+  color: var(--dark);
   font-family: 'Manrope';
   font-size: 16px;
   font-style: normal;
@@ -44,7 +63,7 @@ export const Title = styled.h3`
 `;
 
 export const Price = styled.p`
-  color: #121417;
+  color: var(--dark);
   font-family: 'Manrope';
   font-size: 16px;
   font-style: normal;
@@ -53,10 +72,9 @@ export const Price = styled.p`
 `;
 
 export const Description = styled.ul`
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--grey);
   display: flex;
-  width: 274px;
-  height: 40px;
+  width: 100%;
   overflow: hidden;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,7 +82,7 @@ export const Description = styled.ul`
   line-height: 1.5;
   row-gap: 4px;
   width: fit-content;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 
   & > li:not(:last-child) {
     border-right: 1px solid rgba(18, 20, 23, 0.1);
@@ -88,11 +106,12 @@ export const LearMoreBtn = styled.button`
   outline: none;
   border: none;
   border-radius: 12px;
-  background: #3470ff;
+  background: var(--blue);
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.4;
   color: #fff;
+
   &:hover,
   &:focus {
     background-color: #224bac;

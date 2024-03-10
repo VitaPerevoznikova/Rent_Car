@@ -7,7 +7,7 @@ export default function Footer() {
     <FooterWrapper>
       <Container>
         <Logo src={logoFooter} alt="logo" />
-        <Link>
+        <div>
         {' '}
         &#169; Car Rental 2024 | Developed by{' '}
         <Link
@@ -16,7 +16,7 @@ export default function Footer() {
         >
           Vita Perevoznikova
         </Link>
-      </Link>
+      </div>
       </Container>
     </FooterWrapper>
   );

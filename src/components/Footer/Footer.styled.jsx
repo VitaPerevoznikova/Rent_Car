@@ -1,26 +1,29 @@
 import styled from '@emotion/styled';
 
 export const FooterWrapper = styled.footer`
-  height: 50px;
   background-color: var(--bg-white);
 
   @media screen and (min-width: 768px) {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 `;
 
 export const Container = styled.div`
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const Logo = styled.img`
   width: 100px;
-  position: absolute;
-  left: 48%;
-  
-  @media screen and (max-width: 768px) {
-    left: 38%;
-  }
 `;

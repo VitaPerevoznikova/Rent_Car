@@ -1,4 +1,4 @@
-import{u as i,j as e,d as R,r as b,g as H,a as _,l as $,m as K}from"./index-f3d27b86.js";const de=t=>t.cars.cars,he=t=>t.isLoading,N=t=>t.favoriteCars.favorites,O=i.li`
+import{u as i,j as e,d as R,r as b,g as H,a as _,l as $,m as K}from"./index-836eef2d.js";const de=t=>t.cars.cars,he=t=>t.isLoading,N=t=>t.favoriteCars.favorites,O=i.li`
 display: flex;
 width: 100%;
 height: auto;

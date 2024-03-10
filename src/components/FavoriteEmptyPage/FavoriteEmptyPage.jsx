@@ -1,7 +1,7 @@
-import { Button, EmptyTitle, ImgEmptyFav, WrapperLink } from "./ErrorPage.styled";
+import { Button, EmptyTitle, ImgEmptyFav, WrapperLink } from "./FavoriteEmptyPage.styled";
 
 
-const ErrorPage = () => {
+const FavoriteEmptyPage = () => {
   return (
     <WrapperLink>
     <EmptyTitle>Favorite is empty.</EmptyTitle>
@@ -11,4 +11,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default FavoriteEmptyPage;

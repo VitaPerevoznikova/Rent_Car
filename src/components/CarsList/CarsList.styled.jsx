@@ -6,5 +6,5 @@ export const ListCars = styled.ul`
     align-items: center;
     gap: 50px 29px;
     justify-content: center;
-    padding: 80px 0 0 0;
+    padding: 60px 0 0 0;
 `;

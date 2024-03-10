@@ -8,14 +8,12 @@ export const makeComaInMileage = (mileage) => {
     return mileageStringArr.join("");
   };
   
-  // Make number from string with '$' (rentalPrice) '$30' -> 30
   
   export const makeNumberFromPrice = (stringPrise) => {
     const price = parseInt(stringPrise.replace("$", ""));
     return price;
   };
   
-  // Make array of unique brands from allCars array
   
   export const makeUniqueBrandsState = (payload) => {
     const brands = payload?.map((car) => car.make);

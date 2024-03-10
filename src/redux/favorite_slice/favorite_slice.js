@@ -26,7 +26,7 @@ const persistConfig = {
   whitelist: ["favorites"],
 };
 
-export const favoriteCarsPersistReducer = persistReducer(
+export const favoriteReducer = persistReducer(
   persistConfig,
   favoriteCarsSlice.reducer
 );

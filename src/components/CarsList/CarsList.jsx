@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 
 import { selectCars } from "../../redux/cars_selectors";
 
-import CardItem from "../CarsItem/CardItem";
+import CardItem from "../CardItem/CardItem";
 import { ListCars } from "./CarsList.styled";
 
 const CarsList = () => {

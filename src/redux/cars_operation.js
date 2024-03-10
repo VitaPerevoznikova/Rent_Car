@@ -20,7 +20,7 @@ export const fetchFilteredCars = createAsyncThunk(
 	"cars/getAll",
 	async (_, thunkAPI) => {
 		try {
-			const response = await instance.get("/cars");
+			const response = await instance.get("/cars?filter=${filter}");
 			return response.data;
 		} catch (error) {
 			return thunkAPI.rejectWithValue(error.message);

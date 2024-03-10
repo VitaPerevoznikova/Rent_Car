@@ -20,6 +20,7 @@ width: calc((100% - 30px) / 2);
 export const WrapperImage = styled.div`
   position: relative;
   margin-bottom: 14px;
+  width: 100%;
 `;
 
 export const ImageCar = styled.img`
@@ -47,7 +48,6 @@ export const WrapperTitle = styled.div`
   color: var(--dark);
   display: flex;
   justify-content: space-between;
-  padding-right: 8px;
   margin-bottom: 8px;
 `;
 

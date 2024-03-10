@@ -21,7 +21,7 @@ import { ModalWindowWrap } from '../Modal/ModalWrap';
 
 import Placeholder from '../../assets/no_img.jpg';
 
-const CarsCard = ({ car }) => {
+const CarsItem = ({ car }) => {
   const {
     id,
     img,
@@ -132,4 +132,4 @@ const CarsCard = ({ car }) => {
   );
 };
 
-export default CarsCard;
+export default CarsItem;

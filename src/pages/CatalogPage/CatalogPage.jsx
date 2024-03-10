@@ -6,11 +6,14 @@ import CarsList from '../../components/CarsList/CarsList';
 import { fetchCars } from '../../redux/cars_operation';
 import { LoadMoreBtn } from './CatalogPage.style';
 import { selectCars, selectIsLoading } from '../../redux/cars_selectors';
+import Filters from '../../components/Filters/Filters';
 
 const Cars = () => {
   const dispatch = useDispatch();
   const [page, setPage] = useState(0);
   const [limit] = useState(12);
+  const [filterCars, setFilter] = useState('');
+
   const isLoading = useSelector(selectIsLoading);
   const cars = useSelector(selectCars);
 
@@ -29,8 +32,9 @@ const Cars = () => {
 
   return (
     <section>
+      <Filters setFilter={setFilter}/>
       {isLoading && <Loader />}
-      <CarsList />
+      <CarsList filterCars={filterCars}/>
       {totalCars >= page * limit && (
         <LoadMoreBtn type="button" onClick={handleLoadMore}>
           Load more

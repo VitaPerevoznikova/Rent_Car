@@ -10,7 +10,7 @@ align-items: flex-start;
 export const ImageCarModal = styled.img`
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  // object-fit: cover;
   border-radius: 14px;
   margin-bottom: 14px;
 

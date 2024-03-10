@@ -5,7 +5,7 @@ import {
 
 import Placeholder from '../../assets/no_img.jpg';
 
-import { Description, Title } from '../CarsItem/CardItem.style';
+import { Description, Title } from '../CardItem/CardItem.style';
 
 import {
   ConditionSpan,

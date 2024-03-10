@@ -13,7 +13,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import { favoriteCarsPersistReducer } from './favorite_slice/favorite_slice';
+import { favoriteReducer } from './favorite_slice/favorite_slice';
 
 const persistConfig = {
   key: 'cars',
@@ -24,7 +24,7 @@ const persistConfig = {
 export const store = configureStore({
   reducer: {
     cars: persistReducer(persistConfig, carsReducer),
-    favoriteCars: favoriteCarsPersistReducer,
+    favoriteCars: favoriteReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

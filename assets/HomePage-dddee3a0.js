@@ -1,4 +1,4 @@
-import{u as n,L as t,j as e}from"./index-f28cafcc.js";const i="/Rent_Car/assets/image_hero-bd3431ab.png",o="/Rent_Car/assets/image_hero@2x-542c4436.png",r=n.section`
+import{u as n,L as t,j as e}from"./index-d8850e03.js";const i="/Rent_Car/assets/image_hero-bd3431ab.png",o="/Rent_Car/assets/image_hero@2x-542c4436.png",r=n.section`
   padding: 80px 0;
 //background-color: #54A6FF;
 `,a=n.div`

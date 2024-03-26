@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const CatalogSection= styled.section`
+ padding: 60px 0 0 0 ;
+`;
+
 export const LoadMoreBtn = styled.button`
   background-color: var(--bg-white);
   padding: 14px 40px;
@@ -10,7 +14,7 @@ export const LoadMoreBtn = styled.button`
   line-height: 1.5;
   color: #3470ff;
   display: block;
-  margin: 0 auto 30px;
+  margin: 50px auto 30px;
 
   &:hover,
   &:focus {

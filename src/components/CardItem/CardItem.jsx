@@ -34,7 +34,6 @@ const CarsItem = ({ car }) => {
     type,
     year,
     mileage,
-    functionalities,
   } = car;
 
   const dispatch = useDispatch();
@@ -123,7 +122,6 @@ const CarsItem = ({ car }) => {
             <li>{type}</li>
             <li>{model}</li>
             <li>{mileage}</li>
-            <li>{functionalities ? functionalities[0] : ''}</li>
           </Description>
         </div>
         <LearMoreBtn onClick={toggleModal}>Learn more</LearMoreBtn>

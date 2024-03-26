@@ -6,10 +6,6 @@ const Home = lazy(() => import('pages/HomePage/HomePage.jsx'));
 const Catalog = lazy(() => import('pages/CatalogPage/CatalogPage.jsx'));
 const Favorites = lazy(() => import('pages/FavoritesPage/FavoritesPage.jsx'));
 
-
-// const test = import.meta.env.VITE_API_TEST;
-//   console.log(test);
-
 function App() {
 
   return (

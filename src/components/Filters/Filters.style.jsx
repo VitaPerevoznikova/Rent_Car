@@ -1,34 +1,50 @@
-// import styled from "styled-components";
+import styled from 'styled-components';
 
-export const firstSelectStyles = {
-     control: (baseStyles) => ({
-                ...baseStyles,
-                border: "none",
-                width: "224px",
-                height: "48px",
-                background: "#f7f7fb",
-                borderRadius: "14px",
-                fontSize: "18px",
-                fontWeight: "500",
-                color: "black",
-                fontFamily: "Manrope",
-                cursor: "pointer",
-              }),
-              option: (baseStyles, state) => ({
-                ...baseStyles,
-                border: "none",
-                fontSize: "16px",
-                fontWeight: "500",
-                fontFamily: "Manrope",
-                lineHeight: "125%",
-                color: state.isFocused
-                  ? "rgba(18, 20, 23, 0.938)"
-                  : "rgba(18, 20, 23, 0.2)",
-              }),
-              valueContainer: (baseStyles) => ({
-                ...baseStyles,
-                borderRadius: "14px",
-                boxShadow: "0 4px 36px 0 rgba(0, 0, 0, 0.02)",
-              }),
-  };
-  export default firstSelectStyles;
+export const ContainerSearch = styled.div`
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 425px) {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 20px;
+    -webkit-box-pack: center;
+
+  }
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+      margin-bottom: 50px;
+    }
+  }
+`;
+
+export const LabelSearch = styled.label`
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--grey);
+`;
+
+export const SearchButton = styled.button`
+  width: 136px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background: var(--blue);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--white);
+  display: inline-block;
+
+  @media screen and (max-width: 424px) {
+    margin-top: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #224bac;
+  }
+`;

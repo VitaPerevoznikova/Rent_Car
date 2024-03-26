@@ -1,20 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ItemWrapper = styled.li`
-display: flex;
-width: 100%;
-height: auto;
-flex-direction: column;
-align-items: flex-start;
-margin-bottom: 30px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
 
-@media screen and (min-width: 768px) {
-width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
 
-@media screen and (min-width: 1440px) {
-  width: calc((100% - 60px) / 3);
+    @media screen and (min-width: 1440px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
-}
 `;
 
 export const WrapperImage = styled.div`
@@ -25,6 +23,7 @@ export const WrapperImage = styled.div`
 
 export const ImageCar = styled.img`
   width: 100%;
+  height: 268px;
   object-fit: cover;
   border-radius: 14px;
 `;
@@ -40,7 +39,6 @@ export const Heart = styled.svg`
   stroke-linejoin: round;
   stroke-width: 2.667px;
 `;
-
 
 export const WrapperTitle = styled.div`
   width: 100%;
@@ -89,7 +87,7 @@ export const Description = styled.ul`
     margin-right: 6px;
     padding-right: 6px;
   }
-  
+
   & li {
     color: rgba(18, 20, 23, 0.5);
     font-family: 'Manrope';
@@ -101,8 +99,9 @@ export const Description = styled.ul`
 `;
 
 export const LearMoreBtn = styled.button`
-  width: 100%;
+  width: 275px;
   height: 44px;
+  padding: 12px 100px;
   outline: none;
   border: none;
   border-radius: 12px;
@@ -110,7 +109,8 @@ export const LearMoreBtn = styled.button`
   font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
-  color: #fff;
+  color: var(--white);
+  margin: 0 auto;
 
   &:hover,
   &:focus {

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Loader } from '../../components/Load/Loader';
 import CarsList from '../../components/CarsList/CarsList';
 import { fetchCars } from '../../redux/cars_operation';
-import { LoadMoreBtn } from './CatalogPage.style';
+import { CatalogSection, LoadMoreBtn } from './CatalogPage.style';
 import { selectCars, selectIsLoading } from '../../redux/cars_selectors';
 import Filters from '../../components/Filters/Filters';
 
@@ -31,7 +31,7 @@ const Cars = () => {
   const totalCars = cars.length;
 
   return (
-    <section>
+    <CatalogSection>
       <Filters setFilter={setFilter}/>
       {isLoading && <Loader />}
       <CarsList filterCars={filterCars}/>
@@ -40,7 +40,7 @@ const Cars = () => {
           Load more
         </LoadMoreBtn>
       )}
-    </section>
+    </CatalogSection>
   );
 };
 

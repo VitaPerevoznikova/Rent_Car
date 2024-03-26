@@ -1,16 +1,15 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import {
   ModalContainer,
   CloseBtnWrapper,
   BackdropModal,
- 
-} from "./ModalWrap.styled";
+} from './ModalWrap.styled';
 
-import { ModalPortal } from "./Portal";
+import { ModalPortal } from './Portal';
 
 export const ModalWindowWrap = ({ onClick, children }) => {
   const onKeyDown = (e) => {
-    if (e.code === "Escape") {
+    if (e.code === 'Escape') {
       onClick();
     }
   };
@@ -26,16 +25,14 @@ export const ModalWindowWrap = ({ onClick, children }) => {
   };
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
 
     return () => {
-      document.body.style.overflow = "auto";
-      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = 'auto';
+      window.removeEventListener('keydown', onKeyDown);
     };
   });
-
-
 
   return (
     <ModalPortal>
@@ -54,4 +51,3 @@ export const ModalWindowWrap = ({ onClick, children }) => {
     </ModalPortal>
   );
 };
-
